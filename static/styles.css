@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3, h4 {
+  color: #2c3e50;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="file"] {
+  padding: 8px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#csvPreviewContainer {
+  display: none;
+  margin-top: 20px;
+}
+
+#csvPreview {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#csvPreview thead {
+  background-color: #34495e;
+  color: white;
+}
+
+#csvPreview th, #csvPreview td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#csvPreview tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#csvPreview tr:hover {
+  background-color: #7f9ca9;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #346e4d;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+#downloadLink:hover {
+  background-color: #57a778;
+}
